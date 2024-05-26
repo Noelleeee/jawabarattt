@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerhome {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+.navbarhome {
+  height: 12%;
+  display: flex;
+  align-items: center;
+}
+
+.logohome {
+  width: 60px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.rowhome {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+
+.colhome {
+  flex-basis: 50%;
+  margin-left: 100px;
+}
+
+.title1home {
+  color: #fff;
+  font-size: 100px;
+}
+
+h5 {
+  color: #fff;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+button {
+  width: 180px;
+  color: #000;
+  font-size: 12px;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.cardhome {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 0.5s;
+}
+
+.cardhome h3 {
+  text-align: center;
+  padding-top: 55%;
+}
+
+.card1home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/images/gedungsatee.jpg);
+}
+
+.card2home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/images/cirebon.jpg);
+}
+
+.card3home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/images/pangandaran.jpeg);
+}
+
+.card4home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./assets/images/depok.jpg);
+}
+
+.cardhome:hover {
+  transform: translateY(-10px);
+}
+
+h3 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+.cardhome p {
+  text-shadow: 0 0 5px #000;
+  font-size: 8px;
+}
+
+.title1home {
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  background-clip: text;
+  background-position: -570px 0;
+  animation: backcolor 5s linear infinite alternate;
+}
+
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}

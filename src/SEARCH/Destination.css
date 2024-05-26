@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem;
+}
+
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://source.unsplash.com/random") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.destination-search-container {
+  width: 100%;
+  padding-left: 8%;
+  padding-right: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 80px; /* Add padding to avoid content being hidden under navbar */
+}
+
+.destination-search-navbar.custom-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  position: fixed; /* Fix navbar to top */
+  top: 0; /* Align to top */
+  left: -30px; /* Shift navbar 30px to the left */
+  z-index: 1000; /* Ensure navbar stays above other content */
+}
+
+.destination-search-logo {
+  width: 60px;
+  cursor: pointer;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.destination-search-destination-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 80px; /* Adjust top position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.destination-search-destination-search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  width: 300px;
+  outline: none;
+  color: black; /* Set text color to black */
+}
+
+.destination-search-destination-search button {
+  display: none;
+  padding: 10px;
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.destination-search-error-message {
+  color: red;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.destination-search-destination-container {
+  width: 100%;
+  max-width: 1200px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 100px; /* Added margin to avoid overlap with fixed search bar */
+}
+
+.destination-search-destination-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.destination-search-card__article {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-search-card__title {
+  font-size: var(--h2-font-size);
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.destination-search-card__description {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.25rem;
+  color: black;
+}
+
+.destination-search-card__button {
+  text-decoration: none;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--first-color);
+}
+
+.destination-search-card__button:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 340px) {
+  .destination-search-container {
+    margin-inline: 1rem;
+  }
+}

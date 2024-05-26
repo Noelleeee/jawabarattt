@@ -1,0 +1,45 @@
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-items: center;
+  }
+  
+  .contact-header {
+    margin-bottom: 2rem;
+    font-size: 50px;
+    color: black;
+  }
+ 
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+  }
+  
+  .contact-input,
+  .contact-select,
+  .contact-textarea {
+    padding: 1.4rem;
+    background: transparent;
+    border: 1px solid black;
+  }
+  
+  .contact-textarea {
+    height: 6rem;
+  }
+  
+  .contact-button {
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: palevioletred;
+    color: white;
+  }
+  
