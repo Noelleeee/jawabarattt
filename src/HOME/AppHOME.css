@@ -145,3 +145,76 @@ h3 {
     background-position: 0 0;
   }
 }
+
+/* Existing CSS here */
+
+@media only screen and (min-width: 1920px) {
+  .containerhome {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbarhome {
+    height: 10%;
+  }
+
+  .logohome {
+    width: 80px;
+  }
+
+  nav ul li {
+    margin-left: 40px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .rowhome {
+    height: 90%;
+  }
+
+  .colhome {
+    margin-left: 50px;
+  }
+
+  .title1home {
+    font-size: 80px;
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  button {
+    width: 200px;
+    font-size: 14px;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+
+  .cardhome {
+    width: 220px;
+    height: 250px;
+    margin: 15px 30px;
+  }
+
+  .cardhome h3 {
+    padding-top: 50%;
+  }
+
+  .cardhome p {
+    font-size: 10px;
+  }
+
+  .title1home {
+    background-position: -670px 0;
+  }
+
+  @keyframes backcolor {
+    100% {
+      background-position: 0 0;
+    }
+  }
+}
