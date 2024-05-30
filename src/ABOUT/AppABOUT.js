@@ -10,7 +10,7 @@ import background from "./img/background.jpg";
 function AppABOUT() {
   const cards = [
     { img: pael, description: "00000105614", title: "Raphael Vittorio" },
-    { img: theo, description: "00000107586", title: "Theofililo" },
+    { img: theo, description: "00000107586", title: "Theofilius" },
     { img: jipeng, description: "00000105634", title: "Benedict Zivent" },
     { img: er, description: "00000109229", title: "Erlangga" },
   ];
